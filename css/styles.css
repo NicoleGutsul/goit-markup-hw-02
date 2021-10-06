@@ -1,3 +1,256 @@
+/* Common */
+
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-black-color: #000000;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: #f5f4fa;
+  --common-title-color: #212121;
+  --footer-color: #2f303a;
+  --footer-hyperlink-color: rgba(255, 255, 255, 0.6);
+
+  --logo-font-size: 26px;
+  --primary-font-size: 14px;
+  --hero-button-font-size: 16px;
+  --first-title-size: 44px;
+  --second-title-size: 36px;
+
+  --portfolio-title-size: 18px;
+  --portfolio-primary-font-size: 16px;
+}
+
 body {
-  font-family: Roboto;
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: var(--primary-font-size);
+  line-height: 1.71;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+header {
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Link */
+
+.link {
+  text-decoration: none;
+}
+
+/* Button */
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+}
+
+.button.primary:hover {
+  color: var(--common-title-color);
+  background-color: var(--secondary-white-color);
+}
+
+.button.secondary {
+  color: var(--common-title-color);
+  background-color: var(--secondary-white-color);
+}
+
+.button.secondary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Logo */
+
+.logo {
+  font-size: var(--logo-font-size);
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.logo.link {
+  color: var(--accent-color);
+}
+
+.logo > span {
+  color: var(--primary-black-color);
+}
+
+/* Site nav */
+
+.site-nav .link,
+.contacts .link {
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.site-nav .link {
+  color: var(--common-title-color);
+}
+
+.contacts .link {
+  color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--footer-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: var(--first-title-size);
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  font-weight: 700;
+  font-size: var(--hero-button-font-size);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/* Section */
+
+.section {
+  background-color: var(--primary-white-color);
+}
+
+.title {
+  color: var(--common-title-color);
+
+  font-weight: 700;
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.title-description {
+  width: 270px;
+  height: 75px;
+  top: 800px;
+}
+
+.section-title {
+  color: var(--common-title-color);
+
+  font-weight: 700;
+  font-size: var(--second-title-size);
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Team */
+
+.team {
+  background-color: var(--second-white-color);
+}
+
+.team li {
+  background-color: var(--primary-white-color);
+}
+
+.team .name {
+  color: var(--common-title-color);
+
+  font-weight: 500;
+}
+
+.team .name,
+.team .role {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+
+.address-text {
+  color: #ffffff;
+  font-weight: normal;
+  width: 231px;
+  height: 21px;
+  line-height: 24px;
+}
+
+.link-footer {
+  color: var(--footer-hyperlink-color);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--accent-color);
+}
+.logo-footer > span {
+  color: var(--primary-white-color);
+}
+
+/* Portfolio */
+
+/* Works */
+
+.works {
+  background-color: var(--primary-white-color);
+}
+
+.works-nav .button {
+  font-weight: 500;
+  font-size: var(--portfolio-primary-font-size);
+  line-height: 1.63;
+}
+
+.works .name {
+  color: var(--common-title-color);
+
+  font-weight: 700;
+  font-size: var(--portfolio-title-size);
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works .type {
+  font-size: var(--portfolio-primary-font-size);
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
